@@ -1,0 +1,21 @@
+{
+  "name": "class-validator-cpf",
+  "version": "1.0.0",
+  "description": "Um decorator customizado para validar CPF usando o class-validator",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cauã Soares",
+  "license": "ISC",
+  "keywords": [
+    "class-validator",
+    "cpf",
+    "isCPF"
+  ],
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "cpf-cnpj-validator": "^1.0.3"
+  }
+}

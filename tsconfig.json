@@ -2,6 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "declaration": true,
+    "declarationDir": "types/",
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -10,7 +11,7 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "incremental": true,
+    "incremental": false,
     "skipLibCheck": true,
     "strictNullChecks": false,
     "noImplicitAny": false,

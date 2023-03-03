@@ -1,9 +1,9 @@
 {
   "name": "class-validator-cpf",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Um decorator customizado para validar CPF usando o class-validator",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "types/index.d.ts",
   "files": [
     "dist"
   ],

@@ -2,20 +2,29 @@
   "name": "class-validator-cpf",
   "version": "1.0.0",
   "description": "Um decorator customizado para validar CPF usando o class-validator",
-  "main": "none",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && tsc"
   },
   "author": "Cauã Soares",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "class-validator",
+    "class-validator-CPF",
     "cpf",
-    "isCPF"
+    "isCPF",
+    "NestJS"
   ],
   "dependencies": {
-    "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "cpf-cnpj-validator": "^1.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
   }
 }

@@ -3,22 +3,10 @@ import {
     registerDecorator,
     ValidationArguments,
 } from 'class-validator';
-
-import { cpf } from 'cpf-cnpj-validator';
-
-function isValidCPF(value: string): boolean {
-    const formatCPF = cpf.format(value);
-
-    // Isso permite apenas CPF formatado com pontuação, remova se não quiser
-    if (value !== formatCPF) {
-        return false;
-    }
-
-    return cpf.isValid(value);
-}
+import { isValidCPF } from './validate-cpf';
 
 export function IsCPF(validationOptions?: ValidationOptions) {
-    return function (object: Record<string, any>, propertyName: string) {
+    return function (object: Record<string, any>, propertyName: string): void {
         registerDecorator({
             name: 'isCPF',
             target: object.constructor,
@@ -35,3 +23,4 @@ export function IsCPF(validationOptions?: ValidationOptions) {
         });
     };
 }
+

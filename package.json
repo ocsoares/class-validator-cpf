@@ -1,6 +1,6 @@
 {
   "name": "class-validator-cpf",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Um decorator customizado para validar CPF usando o class-validator",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -22,6 +22,10 @@
     "class-validator",
     "class-validator-CPF",
     "cpf",
+    "validation",
+    "validator",
+    "regex",
+    "regular expression",
     "isCPF",
     "NestJS"
   ],

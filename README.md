@@ -2,15 +2,9 @@
 
 Valida strings de CPF no formato XXX.XXX.XXX-XX ou XXXXXXXXXXX, usando como base o pacote class-validator
 
-<!-- [![travis][travis-image]][travis-url] ARRUMAR << -->
-
 [![npm][npm-image]][npm-url]
 ![GitHub top language](https://img.shields.io/github/languages/top/ocsoares/class-validator-cpf)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ocsoares/class-validator-cpf)
-
-<!-- [travis-image]: https://travis-ci.org/carvalhoviniciusluiz/cpf-cnpj-validator.svg?branch=master ARRUMAR << -->
-
-<!-- [travis-url]: https://travis-ci.org/carvalhoviniciusluiz/cpf-cnpj-validator ARRUMAR << -->
 
 [npm-image]: https://img.shields.io/npm/v/class-validator-cpf.svg?style=flat
 [npm-url]: https://npmjs.org/package/class-validator-cpf

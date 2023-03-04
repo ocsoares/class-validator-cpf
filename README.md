@@ -42,3 +42,15 @@ class User {
   cpf: string;
 }
 ```
+
+### Testes
+
+```shell
+npm test
+```
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2023-present

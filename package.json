@@ -1,6 +1,6 @@
 {
   "name": "class-validator-cpf",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Um decorator customizado para validar CPF usando o class-validator",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -9,8 +9,9 @@
     "types/"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist && rm -rf types && tsc"
+    "build": "rm -rf dist && rm -rf types && tsc --project tsconfig.build.json",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "Cauã Soares",
   "license": "MIT",
@@ -34,6 +35,25 @@
     "cpf-cnpj-validator": "^1.0.3"
   },
   "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "jest": "^29.4.3",
+    "ts-jest": "^29.0.5",
     "typescript": "^4.9.5"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "rootDir": "test",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
   }
 }

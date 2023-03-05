@@ -28,6 +28,20 @@ describe('Index Test', () => {
         await expect(validateCPF('62818684048')).resolves.toBe(true)
     })
 
+    it('should be a invalid CPF if empty', async () => {
+        await expect(validateCPF('')).resolves.toBe(false)
+    })
+
+    it('should be a invalid CPF if it is not a string', async () => {
+        await expect(validateCPF(65888683086 as any)).resolves.toBe(false)
+        await expect(validateCPF({cpf: "627.817.740-49"} as any)).resolves.toBe(false)
+        await expect(validateCPF([
+            {cpf: 58317966046},
+            {other_cpf: '796.576.300-10'},
+            {another_cpf: '796.576.380-10'}
+        ] as any)).resolves.toBe(false)
+    })
+
     it('should be a invalid CPFs with punctiation', async () => {
         await expect(validateCPF('359.712.920--05')).resolves.toBe(false)
         await expect(validateCPF('359.712.0-05')).resolves.toBe(false)
